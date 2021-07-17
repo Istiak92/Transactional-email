@@ -1,9 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Amazon transactional email" />
     <title>Transactional Email</title>
     <style type="text/css">
       body {
@@ -26,26 +27,41 @@
 
       a {
         text-decoration: none;
-        color: #388cda;
-        font-size: 16px;
+        color: #0066c0;
+      }
+      @media screen and (max-width: 598px) {
+        .container {
+          padding-right: 30px !important;
+          padding-left: 30px !important;
+        }
+        .transation-detail {
+          padding-right: 20px !important;
+          padding-left: 20px !important;
+        }
       }
 
-      @media screen and (max-width: 425px) {
-        img.Image {
-          width: 170px !important;
-          height: auto !important;
-          max-width: 200px !important;
+      @media screen and (max-width: 400px) {
+        .container {
+          padding-right: 20px !important;
+          padding-left: 20px !important;
         }
-
-        .padding {
-          padding-right: 0 !important;
-          padding-left: 0 !important;
+        .transation-detail {
+          padding-right: 20px !important;
+          padding-left: 20px !important;
+        }
+        .header td p {
+          text-align: left;
+        }
+        .product {
+          width: 100% !important;
+          max-width: 100% !important;
         }
       }
     </style>
   </head>
 
   <body>
+    <!--Start of Email template-->
     <center
       class="wrapper"
       style="
@@ -55,8 +71,9 @@
         padding-bottom: 40px;
       "
     >
+      <!--Start of Container table-->
       <table
-        class="main"
+        class="container"
         align="center"
         style="
           margin: 0 auto;
@@ -66,685 +83,769 @@
           font-size: 15px;
           font-family: Arial, Helvetica, sans-serif;
           color: #4a4a4a;
-          background-color: #f2f2f2;
+          background-color: #fafafa;
         "
       >
-        <!--Amazon Logo image-->
-        
+        <!--Start of Amazon Logo image Section-->
+
         <tr>
-          <td align="center" style="padding: 20px; text-align: center">
+          <td>
             <a
-              style="display: block"
               href="https://www.amazon.com/?ie=UTF8&ref_=pe_386300_442618370_scr_home"
+              rel="noopener"
+              alt="null"
               target="_blank"
-              ><img
-                src="https://ci3.googleusercontent.com/proxy/wpBmetf78Gbngi8-Y673ymWijDkC0vvMg_g50krG6b1n9QWx0Z9JItwGGSGKm58z0jdYkFIjoUIpNCL4ktfF0Zvmoue2wgxQTLIVewhdPw0AlHkb_4w4Ck6XJ8Xuy9Rd=s0-d-e1-ft#https://images-na.ssl-images-amazon.com/images/G/01/reading/images/amazon.png"
+            >
+              <table
+                class="logo-img"
+                align="center"
                 width="100%"
-                style="max-width: 180px"
-                alt=""
-            /></a>
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+                style="max-width: 600px"
+              >
+                <tr>
+                  <td align="center" style="padding: 40px">
+                    <img
+                      align="center"
+                      src="https://ci3.googleusercontent.com/proxy/wpBmetf78Gbngi8-Y673ymWijDkC0vvMg_g50krG6b1n9QWx0Z9JItwGGSGKm58z0jdYkFIjoUIpNCL4ktfF0Zvmoue2wgxQTLIVewhdPw0AlHkb_4w4Ck6XJ8Xuy9Rd=s0-d-e1-ft#https://images-na.ssl-images-amazon.com/images/G/01/reading/images/amazon.png"
+                      width="100%"
+                      style="display: block; max-width: 135px"
+                      alt="logo"
+                    />
+                  </td>
+                </tr>
+              </table>
+            </a>
           </td>
         </tr>
-     
-        <!--Transaction Detail Section-->
-        
+        <!--End of Amazon Logo image Section-->
+
+        <!--Start of Transaction Detail Section-->
+
         <tr>
-          <td style="background-color: #f2f2f2; padding-bottom: 34px">
+          <td style="background-color: #fafafa; padding-bottom: 30px">
             <table
+              class="transation-detail"
+              width="100%"
+              cellpadding="0"
+              cellspacing="0"
+              border="0"
               style="
                 margin: 0 auto;
-                width: 100%;
-                max-width: 480px;
-                border-spacing: 0;
+                max-width: 530px;
+                background-color: #ffffff;
+                border-top: 2px solid #cacaca;
+                border-left: 1px solid #d6d6d6;
+                border-right: 1px solid #d6d6d6;
+                border-bottom: 2px solid #d6d6d6;
               "
               role="presentation"
             >
               <tr>
-                <td
-                  style="
-                    background-color: #ffffff;
-                    border-top: 2px solid #d9d9d9;
-                    border-left: 1px solid #d9d9d9;
-                    border-right: 1px solid #d9d9d9;
-                    border-bottom: 2px solid #d9d9d9;
-                    padding: 15px;
-                  "
-                >
+                <td style="line-height: 31px">&nbsp;</td>
+              </tr>
+              <tr>
+                <td>
                   <table
-                    width="100%;
-                    style="border-spacing: 0"
-                    role="presentation"
+                    class="header"
+                    width="100%"
+                    cellpadding="0"
+                    cellspacing="0"
+                    border="0"
+                    style="text-align: center; max-width: 317px; margin: 0 auto"
                   >
                     <tr>
-                      <td style="padding-bottom: 10px">
-                        <table
-                          width="100%"
-                          style="border-spacing: 0; text-align: center"
-                          role="presentation"
-                        >
-                          <tr>
-                            <td
-                              align="center"
-                              style="text-align: center; padding-bottom: 5px"
-                            >
-                              <p style="font-size: 16px; line-height: 0">
-                                Hi Jack, your package will arrive:
-                              </p>
-                              <p
-                                style="
-                                  font-size: 24px;
-                                  color: #008a00;
-                                  font-weight: bold;
-                                  line-height: 23px;
-                                "
-                              >
-                                Monday, December 14
-                              </p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td
-                              align="center"
-                              valign="middle"
-                              width="100%"
-                              height="40"
-                              style="
-                                line-height: 40px;
-                                font-size: 15px;
-                                display: inline-block;
-                                max-width:380px;
-                                border-bottom: 2px solid #cbcbcb;
-                              "
-                            >
-                              <a
-                                style="
-                                  color: #111111;
-                                  display: block;
-                                  background-color: #f1c65d;
-                                "
-                                href="https://www.example.com"
-                                target="_blank"
-                                >Track package</a
-                              >
-                            </td>
-                          </tr>
-                        </table>
+                      <td
+                        align="center"
+                        style="
+                          color: #111111;
+                          font-size: 15px;
+                          line-height: 19px;
+                        "
+                      >
+                        <p style="margin: 0">
+                          Hi Jack, your package will arrive:
+                        </p>
                       </td>
                     </tr>
-
                     <tr>
-                      <td style="padding-top: 25px">
-                        <table
-                          width="100%"
-                          style="border-spacing: 0"
-                          role="presentation"
-                        >
-                          <tr>
-                            <td
-                              style="
-                                text-align: left;
-                                vertical-align: top;
-                                width: 27px;
-                                border: none;
-                                padding-right: 21px;
-                                padding-left: 45px;
-                              "
-                            >
-                              <a href="https://www.example.com" target="_blank"
-                                ><img
-                                  src="https://ci5.googleusercontent.com/proxy/q4wnl5TrzjNaV7AnfwRgdXetpelY-IAzxgWpKVlNIhUB9cPw1uMLzi0CTWrTBC7pZTARdwWcgjPiSRzmoeTL484_t_L0qIE1Wjlr3EyiapBRMNU4Gm68hWZ9_syhbvrj3w=s0-d-e1-ft#https://images-na.ssl-images-amazon.com/images/G/01/img16/email/truck_grey.png"
-                                  alt="delivery"
-                                  width="100%"
-                                  style="
-                                    max-width: 27px;
-                                    display: block;
-                                    border: none;
-                                  "
-                              /></a>
-                            </td>
-                            <td>
-                              <table
-                                width="100%"
-                                style="border-spacing: 0"
-                                role="presentation"
-                              >
-                                <tr>
-                                  <td
-                                    colspan="1"
-                                    valign="top"
-                                    align="left"
-                                    style="padding: 5px 0 5px"
-                                  >
-                                    <a
-                                      style="
-                                        color: #868686;
-                                        font-size: 15px;
-                                        line-height: 15px;
-                                        font-weight: bold;
-                                      "
-                                      href="https://www.example.com"
-                                      target="_blank"
-                                      >ON THE WAY</a
-                                    >
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td
-                                    colspan="1"
-                                    valign="top"
-                                    align="left"
-                                    style="line-height: 20px"
-                                  >
-                                    <p>
-                                      <a
-                                        style="
-                                          color: #111111;
-                                          line-height: 2px;
-                                          font-size: 20px;
-                                        "
-                                        href="https://www.example.com"
-                                        target="_blank"
-                                        >1 item</a
-                                      >
-                                    </p>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td
-                                    colspan="1"
-                                    valign="top"
-                                    align="left"
-                                    style="
-                                      font-size: 15px;
-                                      line-height: 15px;
-                                      padding: 5px 0 5px;
-                                    "
-                                  >
-                                    <a
-                                      style="color: #868686"
-                                      href="https://www.example.com"
-                                      target="_blank"
-                                      >Order #112-0888888-6555555</a
-                                    >
-                                  </td>
-                                </tr>
-                              </table>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
+                      <td style="line-height: 9px">&nbsp;</td>
                     </tr>
-
-                    <tr>
-                      <td style="padding-top: 30px">
-                        <table width="100%" style="border-spacing: 0">
-                          <tr>
-                            <td
-                              style="
-                                text-align: left;
-                                vertical-align: top;
-                                width: 27px;
-                                border: none;
-                                padding-right: 21px;
-                                padding-left: 45px;
-                              "
-                            >
-                              <a href="https://www.example.com" target="_blank"
-                                ><img
-                                  src="https://ci3.googleusercontent.com/proxy/GUGU7qYY8lexm0GCxGkQBHIi5bzLdx_JJ1bKesaV4myG9OhQWTJqilmPgvF1icBpKTdZDy0JFm0Q3l_iG-zvbfhu6GcWICviVU8-fE5-eGkpKOjm0zmyMQMRRfNHYFI=s0-d-e1-ft#https://images-na.ssl-images-amazon.com/images/G/01/img16/email/pin_grey.png"
-                                  alt="delivery"
-                                  width="100%"
-                                  style="
-                                    max-width: 27px;
-                                    display: block;
-                                    border: none;
-                                  "
-                                />
-                              </a>
-                            </td>
-                            <td>
-                              <table
-                                width="100%"
-                                style="border-spacing: 0"
-                                role="presentation"
-                              >
-                                <tr>
-                                  <td
-                                    colspan="1"
-                                    valign="top"
-                                    align="left"
-                                    style="
-                                      font-size: 15px;
-                                      line-height: 15px;
-                                      font-weight: bold;
-                                      padding: 5px 0 5px;
-                                    "
-                                  >
-                                    <a
-                                      style="color: #868686"
-                                      href="https://www.example.com"
-                                      target="_blank"
-                                    >
-                                      SHIP TO</a
-                                    >
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td
-                                    colspan="1"
-                                    valign="top"
-                                    align="left"
-                                    style="line-height: 20px"
-                                  >
-                                    <p>
-                                      <a
-                                        style="
-                                          color: #111111;
-                                          line-height: 2px;
-                                          font-size: 20px;
-                                        "
-                                        href="https://www.example.com"
-                                        target="_blank"
-                                        >Jack</a
-                                      >
-                                    </p>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td
-                                    colspan="1"
-                                    valign="top"
-                                    align="left"
-                                    style="
-                                      font-size: 15px;
-                                      line-height: 15px;
-                                      padding: 5px 0 5px;
-                                    "
-                                  >
-                                    <a
-                                      style="color: #868686"
-                                      href="https://www.example.com"
-                                      target="_blank"
-                                      >NEW YORK,NY</a
-                                    >
-                                  </td>
-                                </tr>
-                              </table>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td style="padding-top: 30px">
-                        <table
-                          width="100%"
-                          style="border-spacing: 0"
-                          role="presentation"
-                        >
-                          <tr>
-                            <td
-                              style="
-                                text-align: left;
-                                vertical-align: top;
-                                width: 27px;
-                                border: none;
-                                padding-right: 21px;
-                                padding-left: 45px;
-                              "
-                            >
-                              <a href="https://www.example.com" target="_blank"
-                                ><img
-                                  src="https://ci5.googleusercontent.com/proxy/sPTu7Izv38tYHoNf0AFcxqjYsdtILWOTuMpnZRVLZSjKHa7cOxh7kAZ-0Z0xruSyPXn4Ls17_6Vg3o7ruu-WuT8Z3hn0d8hOPTBgXcZS4n8UrmMe3i8zCuFpHIlMYs8=s0-d-e1-ft#https://images-na.ssl-images-amazon.com/images/G/01/img16/email/tag-grey.png"
-                                  alt="delivery"
-                                  width="100%"
-                                  style="
-                                    max-width: 27px;
-                                    display: block;
-                                    border: none;
-                                  "
-                              /></a>
-                            </td>
-                            <td>
-                              <table
-                                width="100%"
-                                style="border-spacing: 0"
-                                role="presentation"
-                              >
-                                <tr>
-                                  <td
-                                    colspan="1"
-                                    valign="top"
-                                    align="left"
-                                    style="
-                                      font-size: 15px;
-                                      line-height: 15px;
-                                      font-weight: bold;
-                                      padding: 5px 0 5px;
-                                    "
-                                  >
-                                    <a
-                                      style="color: #868686"
-                                      href="https://www.example.com"
-                                      target="_blank"
-                                    >
-                                      SHIPMENT TOTAL</a
-                                    >
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td
-                                    colspan="1"
-                                    valign="top"
-                                    align="left"
-                                    style="
-                                      font-size: 15px;
-                                      line-height: 15px;
-                                      padding: 5px 0 5px;
-                                    "
-                                  >
-                                    <a
-                                      href="https://www.example.com"
-                                      target="_blank"
-                                      >50.41</a
-                                    >
-                                  </td>
-                                </tr>
-                              </table>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td style="padding: 30px 0 30px">
-                        <table
-                          width="100%"
-                          style="border-spacing: 0"
-                          role="presentation"
-                        >
-                          <tr>
-                            <td
-                              style="
-                                color: #868686;
-                                text-align: left;
-                                vertical-align: top;
-                                width: 27px;
-                                border: none;
-                                padding-right: 21px;
-                                padding-left: 45px;
-                              "
-                            >
-                              <p>
-                                Return or replace items in
-                                <a href="https://example.com" target="_blank"
-                                  >Your Orders</a
-                                >
-                              </p>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-
                     <tr>
                       <td
-                        width="100%"
-                        height="2px"
-                        style="background-color: #d9d9d9; border: none"
-                      ></td>
+                        align="center"
+                        style="
+                          color: #008a00;
+                          font-size: 22px;
+                          line-height: 22px;
+                          font-weight: bold;
+                        "
+                      >
+                        <p style="margin: 0">Friday, July 9</p>
+                      </td>
                     </tr>
-                    
+                    <tr>
+                      <td style="line-height: 27px">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://www.example.com"
+                          alt="null"
+                          rel="noopener"
+                          target="_blank"
+                        >
+                          <table
+                            width="100%"
+                            align="center"
+                            border="0"
+                            style="max-width: 317px; font-size: 15px"
+                          >
+                            <tr>
+                              <td
+                                align="center"
+                                width="100%"
+                                style="
+                                  line-height: 40px;
+                                  background-color: #f1c65d;
+                                  color: #111111;
+                                  display: inline-block;
+                                  border-bottom: 2px solid #cbcbcb;
+                                "
+                              >
+                                Track package
+                              </td>
+                            </tr>
+                          </table>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="line-height: 42px">&nbsp;</td>
+                    </tr>
 
-                    <!--Recommentation for other products section-->
-                    
-
+                    <!--Start of ship detail Section-->
                     <tr>
                       <td>
                         <table
                           width="100%"
+                          style="
+                            border-spacing: 0;
+                            text-align: center;
+                            max-width: 317px;
+                          "
+                          dir="ltr"
+                        >
+                          <!--Start of "On the Way" Section-->
+                          <tr>
+                            <td>
+                              <a
+                                href="https://www.amazon.com/gp/r.html?C=1N85WR5439VWW&amp;K=175SI3NWTTO2B&amp;M=urn:rtn:msg:202107061815526265bf6110c54e95a95a8e7466f0p0na&amp;R=1D9S7NL9TQVDO&amp;T=C&amp;U=https%3A%2F%2Fwww.amazon.com%2Fgp%2Fyour-account%2Fship-track%3Fie%3DUTF8%26orderId%3D113-3748445-7987455%26packageIndex%3D0%26shipmentId%3DMsHQs5Vkb%26ref_%3Dpe_386300_442618370_scr_pt_asin&amp;H=TARM3Z9UYBFCOUUJS0NLFSFPQSMA&amp;ref_=pe_386300_442618370_scr_pt_asin"
+                                rel="noopener"
+                                alt="null"
+                                style="text-decoration: none"
+                                target="_blank"
+                              >
+                                <table
+                                  width="100%"
+                                  style="border-spacing: 0; max-width: 317px"
+                                >
+                                  <tr>
+                                    <td
+                                      style="
+                                        text-align: left;
+                                        vertical-align: top;
+                                        width: 27px;
+                                        padding-right: 21px;
+                                      "
+                                    >
+                                      <img
+                                        width="27"
+                                        src="https://ci5.googleusercontent.com/proxy/q4wnl5TrzjNaV7AnfwRgdXetpelY-IAzxgWpKVlNIhUB9cPw1uMLzi0CTWrTBC7pZTARdwWcgjPiSRzmoeTL484_t_L0qIE1Wjlr3EyiapBRMNU4Gm68hWZ9_syhbvrj3w=s0-d-e1-ft#https://images-na.ssl-images-amazon.com/images/G/01/img16/email/truck_grey.png"
+                                        alt="delivery"
+                                      />
+                                    </td>
+                                    <td align="left">
+                                      <table
+                                        width="100%"
+                                        style="
+                                          border-spacing: 0;
+                                          text-align: center;
+                                        "
+                                      >
+                                        <tr>
+                                          <td style="line-height: 5px">
+                                            &nbsp;
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td
+                                            valign="top"
+                                            align="left"
+                                            style="
+                                              color: #868686;
+                                              font-family: Arial, sans-serif;
+                                              font-size: 15px;
+                                              line-height: 15px;
+                                              font-weight: bold;
+                                            "
+                                          >
+                                            ON THE WAY
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td style="line-height: 10px">
+                                            &nbsp;
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td
+                                            align="left"
+                                            style="
+                                              color: #111111;
+                                              font-family: Arial, sans-serif;
+                                              font-size: 20px;
+                                              line-height: 20px;
+                                            "
+                                          >
+                                            <p style="margin: 0">1 item</p>
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td style="line-height: 8px">
+                                            &nbsp;
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td
+                                            colspan="1"
+                                            align="left"
+                                            style="
+                                              color: #868686;
+                                              font-family: Arial, sans-serif;
+                                              font-size: 15px;
+                                              line-height: 15px;
+                                            "
+                                          >
+                                            Order #113-3748445-7987455
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td style="line-height: 5px">
+                                            &nbsp;
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td style="line-height: 37px">&nbsp;</td>
+                                  </tr>
+                                </table>
+                              </a>
+                            </td>
+                          </tr>
+                          <!--End of "On the Way" Section-->
+
+                          <!--Start of "Ship to" Section-->
+                          <tr>
+                            <td>
+                              <a
+                                href="https://www.amazon.com/gp/r.html?C=1N85WR5439VWW&amp;K=175SI3NWTTO2B&amp;M=urn:rtn:msg:202107061815526265bf6110c54e95a95a8e7466f0p0na&amp;R=1D9S7NL9TQVDO&amp;T=C&amp;U=https%3A%2F%2Fwww.amazon.com%2Fgp%2Fyour-account%2Fship-track%3Fie%3DUTF8%26orderId%3D113-3748445-7987455%26packageIndex%3D0%26shipmentId%3DMsHQs5Vkb%26ref_%3Dpe_386300_442618370_scr_pt_asin&amp;H=TARM3Z9UYBFCOUUJS0NLFSFPQSMA&amp;ref_=pe_386300_442618370_scr_pt_asin"
+                                rel="noopener"
+                                rel="noopener"
+                                target="_blank"
+                              >
+                                <table
+                                  width="100%"
+                                  style="border-spacing: 0; max-width: 317px"
+                                >
+                                  <tr>
+                                    <td
+                                      style="
+                                        text-align: left;
+                                        vertical-align: top;
+                                        width: 27px;
+                                        padding-right: 21px;
+                                      "
+                                    >
+                                      <img
+                                        width="23"
+                                        src="https://ci3.googleusercontent.com/proxy/GUGU7qYY8lexm0GCxGkQBHIi5bzLdx_JJ1bKesaV4myG9OhQWTJqilmPgvF1icBpKTdZDy0JFm0Q3l_iG-zvbfhu6GcWICviVU8-fE5-eGkpKOjm0zmyMQMRRfNHYFI=s0-d-e1-ft#https://images-na.ssl-images-amazon.com/images/G/01/img16/email/pin_grey.png"
+                                        alt="location"
+                                      />
+                                    </td>
+                                    <td align="left">
+                                      <table
+                                        width="100%"
+                                        style="
+                                          border-spacing: 0;
+                                          text-align: center;
+                                        "
+                                      >
+                                        <tr>
+                                          <td style="line-height: 5px">
+                                            &nbsp;
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td
+                                            valign="top"
+                                            align="left"
+                                            style="
+                                              color: #868686;
+                                              font-family: Arial, sans-serif;
+                                              font-size: 15px;
+                                              line-height: 15px;
+                                              font-weight: bold;
+                                            "
+                                          >
+                                            SHIP TO
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td style="line-height: 10px">
+                                            &nbsp;
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td
+                                            align="left"
+                                            style="
+                                              color: #111111;
+                                              font-family: Arial, sans-serif;
+                                              font-size: 20px;
+                                              line-height: 20px;
+                                            "
+                                          >
+                                            <p style="margin: 0">Jack</p>
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td style="line-height: 8px">
+                                            &nbsp;
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td
+                                            colspan="1"
+                                            align="left"
+                                            style="
+                                              color: #868686;
+                                              font-family: Arial, sans-serif;
+                                              font-size: 15px;
+                                              line-height: 15px;
+                                            "
+                                          >
+                                            Bronx, NY
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td style="line-height: 5px">
+                                            &nbsp;
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td style="line-height: 37px">&nbsp;</td>
+                                  </tr>
+                                </table>
+                              </a>
+                            </td>
+                          </tr>
+                          <!--End of "Ship to" Section-->
+
+                          <!--Start of "Shipment total" Section-->
+
+                          <tr>
+                            <td>
+                              <a
+                                href="https://www.amazon.com/gp/r.html?C=1N85WR5439VWW&amp;K=175SI3NWTTO2B&amp;M=urn:rtn:msg:202107061815526265bf6110c54e95a95a8e7466f0p0na&amp;R=1D9S7NL9TQVDO&amp;T=C&amp;U=https%3A%2F%2Fwww.amazon.com%2Fgp%2Fyour-account%2Fship-track%3Fie%3DUTF8%26orderId%3D113-3748445-7987455%26packageIndex%3D0%26shipmentId%3DMsHQs5Vkb%26ref_%3Dpe_386300_442618370_scr_pt_asin&amp;H=TARM3Z9UYBFCOUUJS0NLFSFPQSMA&amp;ref_=pe_386300_442618370_scr_pt_asin"
+                                rel="noopener"
+                                rel="noopener"
+                                target="_blank"
+                              >
+                                <table
+                                  width="100%"
+                                  style="border-spacing: 0; max-width: 317px"
+                                >
+                                  <tr>
+                                    <td
+                                      style="
+                                        text-align: left;
+                                        vertical-align: top;
+                                        width: 27px;
+                                        padding-right: 21px;
+                                      "
+                                    >
+                                      <img
+                                        width="23"
+                                        src="https://ci5.googleusercontent.com/proxy/sPTu7Izv38tYHoNf0AFcxqjYsdtILWOTuMpnZRVLZSjKHa7cOxh7kAZ-0Z0xruSyPXn4Ls17_6Vg3o7ruu-WuT8Z3hn0d8hOPTBgXcZS4n8UrmMe3i8zCuFpHIlMYs8=s0-d-e1-ft#https://images-na.ssl-images-amazon.com/images/G/01/img16/email/tag-grey.png"
+                                        alt="price"
+                                      />
+                                    </td>
+                                    <td align="left">
+                                      <table
+                                        width="100%"
+                                        style="
+                                          border-spacing: 0;
+                                          text-align: center;
+                                        "
+                                      >
+                                        <tr>
+                                          <td style="line-height: 5px">
+                                            &nbsp;
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td
+                                            valign="top"
+                                            align="left"
+                                            style="
+                                              color: #868686;
+                                              font-family: Arial, sans-serif;
+                                              font-size: 15px;
+                                              line-height: 15px;
+                                              font-weight: bold;
+                                            "
+                                          >
+                                            SHIPMENT TOTAL
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td style="line-height: 10px">
+                                            &nbsp;
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td
+                                            align="left"
+                                            style="
+                                              color: #0066c0;
+                                              font-family: Arial, sans-serif;
+                                              font-size: 20px;
+                                              line-height: 20px;
+                                            "
+                                          >
+                                            <p style="margin: 0">$0.00</p>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td style="line-height: 37px">&nbsp;</td>
+                                  </tr>
+                                </table>
+                              </a>
+                            </td>
+                          </tr>
+                          <!--End of "Shipment total" Section-->
+                        </table>
+                      </td>
+                    </tr>
+                    <!--End of "Ship Detail" Section-->
+
+                    <!--Start of "Return Item" Section-->
+                    <tr>
+                      <td
+                        style="
+                          color: #868686;
+                          font-family: Arial, sans-serif;
+                          font-size: 15px;
+                          line-height: 15px;
+                        "
+                      >
+                        <p style="margin: 0; text-align: left">
+                          Return or replace items in
+                          <a
+                            href="https://www.example.com/"
+                            rel="noopener"
+                            alt="null"
+                            target="_blank"
+                            >Your Orders</a
+                          >
+                        </p>
+                      </td>
+                    </tr>
+                    <!--End of "Return Item" Section-->
+                    <tr>
+                      <td style="line-height: 24px">&nbsp;</td>
+                    </tr>
+                    <!--Start of "Recicle" Section-->
+                    <tr>
+                      <td
+                        style="
+                          color: #868686;
+                          font-family: Arial, sans-serif;
+                          font-size: 15px;
+                          line-height: 15px;
+                          text-align: ltr;
+                        "
+                      >
+                        <p style="margin: 0; text-align: left">
+                          Learn how to recycle your packaging at
+                          <a
+                            href="https://example.com"
+                            rel="noopener"
+                            target="_blank"
+                            alt="null"
+                            >Amazon Second Chance</a
+                          >
+                        </p>
+                      </td>
+                    </tr>
+                    <!--End of "Recicle" Section-->
+
+                    <tr>
+                      <td style="line-height: 44px">&nbsp;</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- Start of recommendation for other products section-->
+              <tr>
+                <td align="center">
+                  <table
+                    width="100%"
+                    style="
+                      text-align: center;
+                      border-spacing: 0;
+                      border-top: 2px solid #d6d6d6;
+                      border-bottom: 2px solid #d6d6d6;
+                      max-width: 400px;
+                    "
+                  >
+                    <tr>
+                      <td style="line-height: 35px">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p style="margin: 0; text-align: left">
+                          Recommendations for items from across our store
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="line-height: 15px">&nbsp;</td>
+                    </tr>
+
+                    <!--Start of Recommendated item section-->
+                    <tr>
+                      <td>
+                        <table
+                          class="product"
+                          width="50%"
+                          align="left"
                           style="border-spacing: 0"
                           role="presentation"
                         >
                           <tr>
-                            <td style="padding: 40px 0 12px; font-size: 16px">
-                              Recommendations for items from across our store
+                            <td>
+                              <a
+                                href="https://www.amazon.com/ref=nav_logo"
+                                rel="noopener"
+                                alt="null"
+                                target="_blank"
+                                ><img
+                                  src="https://i.ibb.co/XZwXdhW/camera.jpg"
+                                  width="125"
+                                  height="188"
+                                  style="border: 0; max-width: 125px"
+                                  alt="null"
+                              /></a>
                             </td>
                           </tr>
                           <tr>
-                            <td
-                              class="two-columns"
-                              style="
-                                font-size: 0;
-                                text-align: center;
-                                padding-bottom: 15px;
-                              "
-                            >
-                              <table
-                                class="column"
-                                style="
-                                  width: 100%;
-                                  max-width: 200px;
-                                  display: inline-block;
-                                  vertical-align: top;
-                                "
-                              >
-                                <tr>
-                                  <td class="padding">
-                                    <table
-                                      class="content"
-                                      style="font-size: 15px; line-height: 20px"
-                                    >
-                                      <tr>
-                                        <td>
-                                          <a
-                                            href="https://www.amazon.com/Victure-Security-Tracking-Detection-Surveillance/dp/B07CB14GTB/ref=sr_1_1?dchild=1&keywords=Victure+2020+Upgraded&qid=1608943324&sr=8-1"
-                                            target="_blank"
-                                            ><img
-                                              class="Image"
-                                              src="https://images-na.ssl-images-amazon.com/images/I/31cUTWChy4L._AC_SY200_.jpg"
-                                              width="125"
-                                              height="175"
-                                              style="
-                                                border: 0;
-                                                max-width: 150px;
-                                              "
-                                              alt=""
-                                          /></a>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td style="padding: 10px">
-                                          <p>
-                                            <a
-                                              style="
-                                                font-size: 17px;
-                                                color: #868686;
-                                              "
-                                              href="https://www.amazon.com/Victure-Security-Tracking-Detection-Surveillance/dp/B07CB14GTB/ref=sr_1_1?dchild=1&keywords=Victure+2020+Upgraded&qid=1608943324&sr=8-1"
-                                              target="_blank"
-                                              >Victure 2020 Upgraded</a
-                                            >
-                                          </p>
-                                          <p
-                                            style="
-                                              font-size: 15px;
-                                              color: #868686;
-                                            "
-                                          >
-                                            $25.99
-                                            <img
-                                              src="https://ci6.googleusercontent.com/proxy/8RG3JmQMB6S7PcUihs6euyYVEvKYQyXz8pD_5YT9Py3Fm9iis082qNfYwD-vP7KFbEI11XiaAfDA2g8yvL5DL8K1CsLa7ZENiXO0Ijj9GxUkEo-h7XNi1tOxXbDlfxs5WMa2ETHKmcM=s0-d-e1-ft#https://images-na.ssl-images-amazon.com/images/G/01/tea/prime-badge._CB485933835_.gif"
-                                              alt="prime"
-                                            />
-                                          </p>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </td>
-                                </tr>
-                              </table>
-
-                              <table
-                                class="column"
-                                style="
-                                  width: 100%;
-                                  max-width: 200px;
-                                  display: inline-block;
-                                  vertical-align: top;
-                                "
-                              >
-                                <tr>
-                                  <td class="padding">
-                                    <table
-                                      class="content"
-                                      style="font-size: 15px; line-height: 20px"
-                                    >
-                                      <tr>
-                                        <td>
-                                          <a
-                                            href="https://www.amazon.com/Amazon-Essentials-Long-Sleeve-Fleece-Jacket/dp/B085YVTC6G?ref_=Oct_s9_apbd_onr_hd_bw_b4O4E&pf_rd_r=XGBF1JWYXP105QM5WQ98&pf_rd_p=5333f1d9-3f3c-5564-ae38-2bab852f6523&pf_rd_s=merchandised-search-11&pf_rd_t=BROWSE&pf_rd_i=1045830&th=1"
-                                            target="_blank"
-                                            ><img
-                                              class="Image"
-                                              src="https://images-na.ssl-images-amazon.com/images/I/41CEwNtHhWL._AC_SX184_.jpg"
-                                              width="125"
-                                              height="175"
-                                              style="max-width: 150"
-                                              alt=""
-                                          /></a>
-                                        </td>
-                                      </tr>
-
-                                      <tr>
-                                        <td style="padding: 10px">
-                                          <p>
-                                            <a
-                                              style="
-                                                font-size: 17px;
-                                                color: #868686;
-                                              "
-                                              href="https://www.amazon.com/Amazon-Essentials-Long-Sleeve-Fleece-Jacket/dp/B085YVTC6G?ref_=Oct_s9_apbd_onr_hd_bw_b4O4E&pf_rd_r=XGBF1JWYXP105QM5WQ98&pf_rd_p=5333f1d9-3f3c-5564-ae38-2bab852f6523&pf_rd_s=merchandised-search-11&pf_rd_t=BROWSE&pf_rd_i=1045830&th=1"
-                                              target="_blank"
-                                              >Amazon Essentials Men's</a
-                                            >
-                                          </p>
-                                          <p
-                                            style="
-                                              font-size: 15px;
-                                              color: #868686;
-                                            "
-                                          >
-                                            $24.50
-                                            <img
-                                              src="https://ci6.googleusercontent.com/proxy/8RG3JmQMB6S7PcUihs6euyYVEvKYQyXz8pD_5YT9Py3Fm9iis082qNfYwD-vP7KFbEI11XiaAfDA2g8yvL5DL8K1CsLa7ZENiXO0Ijj9GxUkEo-h7XNi1tOxXbDlfxs5WMa2ETHKmcM=s0-d-e1-ft#https://images-na.ssl-images-amazon.com/images/G/01/tea/prime-badge._CB485933835_.gif"
-                                              alt=""
-                                            />
-                                          </p>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </td>
-                                </tr>
-                              </table>
-
-                              <tr>
-                                <td
-                                  width="100%"
-                                  height="2px"
+                            <td style="padding: 10px">
+                              <p>
+                                <a
+                                  style="font-size: 17px; color: #868686"
+                                  href="https://www.amazon.com/ref=nav_logo"
+                                  rel="noopener"
+                                  alt="null"
+                                  target="_blank"
+                                  >Victure 2020 Upgraded</a
+                                >
+                              </p>
+                              <p style="font-size: 15px; color: #868686">
+                                $25.99
+                                <img
+                                  src="https://ci6.googleusercontent.com/proxy/8RG3JmQMB6S7PcUihs6euyYVEvKYQyXz8pD_5YT9Py3Fm9iis082qNfYwD-vP7KFbEI11XiaAfDA2g8yvL5DL8K1CsLa7ZENiXO0Ijj9GxUkEo-h7XNi1tOxXbDlfxs5WMa2ETHKmcM=s0-d-e1-ft#https://images-na.ssl-images-amazon.com/images/G/01/tea/prime-badge._CB485933835_.gif"
+                                  alt="prime"
+                                />
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                        <table
+                          class="product"
+                          width="50%"
+                          align="left"
+                          style="border-spacing: 0"
+                          role="presentation"
+                        >
+                          <tr>
+                            <td>
+                              <a
+                                href="https://www.amazon.com/ref=nav_logo"
+                                rel="noopener"
+                                alt="null"
+                                target="_blank"
+                                ><img
+                                  src="https://i.ibb.co/DCwDpJQ/shirt.jpg"
+                                  width="125"
+                                  height="172"
                                   style="
-                                    background-color: #d9d9d9;
-                                    border: none;
+                                    border: 0;
+                                    max-width: 125px;
+                                    padding-top: 15px;
                                   "
-                                ></td>
-                              </tr>
-
-                              <!--Footer section-->
-                              <tr>
-                                <td style="padding-top: 25px">
-                                  <table
-                                    width="100%"
-                                    style="border-spacing: 0; max-width: 480px;"
-                                    role="presentation"
-                                  >
-                                    <tr>
-                                      <td
-                                        style="
-                                          color: #868686;
-                                          text-align: left;
-                                          vertical-align: top;
-                                          width: 27px;
-                                          border: none;
-                                          padding-right: 21px;
-                                          padding-left: 45px;
-                                          font-size: 11px;
-                                          line-height: 11px;
-                                        "
-                                      >
-                                        <p>
-                                          Unless otherwise noted, items sold by
-                                          <span
-                                            style="background-color: #ffff00"
-                                            >Amazon</span
-                                          >.com are subject to sales tax in
-                                          select states in accordance with the
-                                          applicable laws of that state. If your
-                                          order contains one or more items from
-                                          a seller other than
-                                          <span
-                                            style="background-color: #ffff00"
-                                            >Amazon</span
-                                          >.com, it may be subject to state and
-                                          local sales tax, depending upon the
-                                          sellers business policies and the
-                                          location of their operations. Learn
-                                          more about
-                                          <a
-                                            href="https://www.amazon.com/gp/r.html?C=1N85WR5439VWW&amp;K=175SI3NWTTO2B&amp;M=urn:rtn:msg:20201213135713cbf3486c680a4f3296cd2b85a680p0na&amp;R=3GFC7FCH0MYP6&amp;T=C&amp;U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fhelp%2Fcustomer%2Fdisplay.html%3Fie%3DUTF8%26nodeId%3D202029700%26ref_-%3Dscr_help_tax%26ref_%3Dpe_386300_442618370&amp;H=UGREKMGA9KROEVPBRBLSM86KVUAA&amp;ref_=pe_386300_442618370"
-                                            style="
-                                              color: #0066c0;
-                                              font-family: Arial, sans-serif;
-                                              font-size: 11px;
-                                              text-decoration: none;
-                                            "
-                                            target="_blank"
-                                            >tax and seller information</a
-                                          >
-                                        </p>
-                                        <p>
-                                          Your invoice can be accessed
-                                          <a
-                                            style="font-size: 11px"
-                                            href="https://www.example.com"
-                                            target="_blank"
-                                            >here</a
-                                          >
-                                        </p>
-                                        <p>
-                                          This email was sent from a
-                                          notification-only address that cannot
-                                          accept incoming email. Please do not
-                                          reply to this message.
-                                        </p>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
+                                  alt="null"
+                              /></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 10px">
+                              <p>
+                                <a
+                                  style="font-size: 17px; color: #868686"
+                                  href="https://www.amazon.com/ref=nav_logo"
+                                  rel="noopener"
+                                  alt="null"
+                                  target="_blank"
+                                  >Amazon Essentials Men's</a
+                                >
+                              </p>
+                              <p style="font-size: 15px; color: #868686">
+                                $24.50
+                                <img
+                                  src="https://ci6.googleusercontent.com/proxy/8RG3JmQMB6S7PcUihs6euyYVEvKYQyXz8pD_5YT9Py3Fm9iis082qNfYwD-vP7KFbEI11XiaAfDA2g8yvL5DL8K1CsLa7ZENiXO0Ijj9GxUkEo-h7XNi1tOxXbDlfxs5WMa2ETHKmcM=s0-d-e1-ft#https://images-na.ssl-images-amazon.com/images/G/01/tea/prime-badge._CB485933835_.gif"
+                                  alt=""
+                                />
+                              </p>
                             </td>
                           </tr>
                         </table>
                       </td>
                     </tr>
+                    <!--End of Recommendated item section-->
                   </table>
                 </td>
               </tr>
+              <!-- End of recommentation for other products section-->
+
+              <!--Start of Footer Section-->
+              <tr>
+                <td align="center">
+                  <table
+                    width="100%"
+                    style="
+                      text-align: left;
+                      border-spacing: 0;
+                      max-width: 400px;
+                      color: #868686;
+                      font-family: Arial, sans-serif;
+                      font-size: 11px !important;
+                      line-height: 11px;
+                    "
+                    role="presentation"
+                  >
+                    <tr>
+                      <td style="line-height: 30px">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Unless otherwise noted, items sold by
+                        <span style="background-color: #ffff00">Amazon</span
+                        >.com are subject to sales tax in select states in
+                        accordance with the applicable laws of that state. If
+                        your order contains one or more items from a seller
+                        other than
+                        <span style="background-color: #ffff00">Amazon</span
+                        >.com, it may be subject to state and local sales tax,
+                        depending upon the sellers business policies and the
+                        location of their operations. Learn more about
+                        <a
+                          href="https://www.amazon.com/gp/r.html?C=1N85WR5439VWW&amp;K=175SI3NWTTO2B&amp;M=urn:rtn:msg:20201213135713cbf3486c680a4f3296cd2b85a680p0na&amp;R=3GFC7FCH0MYP6&amp;T=C&amp;U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fhelp%2Fcustomer%2Fdisplay.html%3Fie%3DUTF8%26nodeId%3D202029700%26ref_-%3Dscr_help_tax%26ref_%3Dpe_386300_442618370&amp;H=UGREKMGA9KROEVPBRBLSM86KVUAA&amp;ref_=pe_386300_442618370"
+                          style="
+                            color: #0066c0;
+                            font-family: Arial, sans-serif;
+                            text-decoration: none;
+                          "
+                          rel="noopener"
+                          alt="null"
+                          target="_blank"
+                          >tax and seller information</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="line-height: 9px">&nbsp;</td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        Your invoice can be accessed
+                        <a
+                          href="https://www.example.com"
+                          rel="noopener"
+                          alt="null"
+                          target="_blank"
+                          >by clicking here</a
+                        >
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td style="line-height: 9px">&nbsp;</td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        This email was sent from a notification-only address
+                        that cannot accept incoming email. Please do not reply
+                        to this message.
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td style="line-height: 31px">&nbsp;</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <!--End of Footer Section-->
             </table>
           </td>
         </tr>
       </table>
+      <!--End of Container table-->
     </center>
+    <!--End of Email template-->
   </body>
 </html>
